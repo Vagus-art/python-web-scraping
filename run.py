@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# prepare the option for the chrome driver
+# prepare options for chrome driver
 options = webdriver.ChromeOptions()
 options.add_argument('headless')
 
