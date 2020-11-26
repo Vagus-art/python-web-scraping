@@ -12,7 +12,10 @@ options.add_argument('headless')
 
 driver = webdriver.Chrome(options=options)
 driver.get("https://google.com")
+
 print(driver.title)
+
+print("-----Searching------")
 
 search = driver.find_element_by_name("q")
 
@@ -34,6 +37,6 @@ for i in range(pages):
         )
         element.click()
     finally:
-        print("-----next page------")
+        print("-----end page------")
 
 driver.quit()
